@@ -29,7 +29,7 @@ var oldCollection = JSON.parse(JSON.stringify(collection));
 
 function updateRecords(object, id, prop, value) {
 // Only change code below this line
-  if (prop != "tracks" && value != "") {
+  if (prop != "tracks") {
     object[id][prop] = value;
   } else if (prop == "tracks" && !object[id].hasOwnProperty("tracks")) {
     newProp = [];
